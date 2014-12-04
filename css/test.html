@@ -1,0 +1,65 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>jQuery Smooth Scrolling Internal Anchor Links</title>
+	<meta http-equiv="content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 0;}
+#wrap {
+	width: 100%;
+	max-width: 500px;
+	margin: 1% auto;
+	padding: 1%;}
+h2 {font:1.5em 'TrebuchetMS';color: #222;text-align: center;margin: 1%;padding: 0;}
+p {font:1em 'TrebuchetMS';color: #222;margin: 1%;padding: 0}
+a {font:1em 'TrebuchetMS';color: #1669FF;text-decoration: none;margin: 1%;padding:0}
+a:hover {color: #FF0000}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+
+<div id="top">
+<h2>Smooth Scrolling Using jQuery</h2>
+
+<a href="#anchor-1" class="scroll">Scroll to anchor [1]...</a>
+<p>Smooth scrolling can easily be added to anchors with jQuery. The link is given a class &ldquo;scroll&rdquo; and the target div is given an id which is referenced in the anchor like this...</p>
+<p>&lt;a href="#bottom" class="scroll"&gt;Scroll to the bottom of the page...&lt;/a&gt;</p>
+<p>The target div...</p>
+<p>&lt;div id="bottom"&gt;Text Goes Here&lt;/div&gt;</p>
+<p>Include jQuery in the HTML doc head and add this script just before the closing body tag...</p>
+<p>&lt;script type="text/javascript"&gt;</p>
+<p>jQuery(document).ready(function($) {<br />
+ 
+	$(".scroll").click(function(event){<br />		
+		event.preventDefault();<br />
+		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 2000);<br />
+	});<br />
+});<br />&lt;/script&gt;</p>
+<p>The animation speed in this instance is &ldquo;2000&rdquo;. Reduce it to speed up the animation and increase it to slow things down.</p></div>
+
+<p style="margin-top: 500px">Going down...</p>
+<div id="anchor-1" style="margin-top: 500px"><p>Anchor [1]</p><a href="#bottom" class="scroll">Scroll to the bottom of the page...</a></div>
+
+<p style="margin-top: 500px">... and down</p>
+
+<p style="margin-top: 500px">...and down</p>
+
+<div style="margin-top:500px" id="bottom"><p>...to the bottom of the page.</p><br /><a href="#top" class="scroll">Back To The Top</a></div>
+
+</div>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+ 
+	$(".scroll").click(function(event){		
+		event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 2000);
+	});
+});
+</script>
+</body>
+</html>

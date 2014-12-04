@@ -1,0 +1,240 @@
+<!doctype html>
+
+<html>
+
+  <head>
+    <title>CodeXX</title>
+    <meta charset="utf-8" />
+	<link href='http://fonts.googleapis.com/css?family=Alef:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/codexx.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 2000);
+            });
+         });
+    </script>
+  </head>
+
+<body>
+    <div id="header">
+        <div id="navigation">
+            <ul>
+                <li><a href="#whoweare" class="scroll">Who We Are</a></li>
+                <li><a href="#where" class="scroll">Where</a></li>
+                <li><a href="#members" class="scroll">Members</a></li>
+                <li><a href="#events" class="scroll">Events</a></li>
+                <li><a href="#resources" class="scroll">Resources</a></li>
+                <li><a href="#contact" class="scroll">Contact</a></li>
+            </ul>
+        </div><!-- #navigation -->
+
+        <h1><img src="images/codexx-logo2.png" alt="Chattanooga CodeXX"></h1>
+    </div><!-- #header -->
+
+    <div class="bg_white" id="whoweare">
+        <div class="wrapper">
+            <div class="whoweare">
+                <h2>Who We Are</h2>
+                <div class="whoweare_women women_border_bot women_border_right">
+                    <img src="images/icon-women.png">
+                    <div class="women_content">
+                        <h3>Women</h3>
+                        <p>We believe that women are a valuable asset to the tech community in Chattanooga. We aim to develop female talent and create a support network for women who code.</p>
+                    </div><!-- .women_content -->
+                    <br class="clear">
+                </div><!-- .whoweare_women -->
+
+                <div class="whoweare_women women_border_bot">
+                    <img src="images/icon-technology.png">
+                    <div class="women_content">
+                        <h3>Technology</h3>
+                        <p>We see the energy around technology in Chattanooga, and we’re excited. We believe that this city can be a place where women participate and lead in innovation.<br><br></p>
+                    </div><!-- .women_content -->
+                </div><!-- .whoweare_women -->
+                <br class="clear">
+            </div><!-- .whoweare -->
+
+            <div class="whoweare">
+                <div class="whoweare_women women_border_right">
+                    <div class="women_content">
+                        <h3>Education</h3>
+                        <p>Whether or not a woman aims to code professionally, we believe that she will benefit from understanding the coding languages that make up our digital world.</p>
+                    </div><!-- .women_content -->
+                    <img src="images/icon-education.png">
+                    <br class="clear">
+                </div><!-- .whoweare_women -->
+
+                <div class="whoweare_women">
+                    <div class="women_content">
+                        <h3>Community</h3>
+                        <p>We are a community of women who inspire and support each other. We aim to be part of a larger network of coders in Chattanooga.</p>
+                    </div><!-- .women_content -->
+                    <img src="images/icon-community.png">
+                </div><!-- .whoweare_women -->
+                <br class="clear">
+            </div><!-- .whoweare -->
+
+            <br class="clear">
+        </div><!-- .wrapper -->
+    </div><!-- .bg_white -->
+
+    <div class="bg_teal" id="where" name="where">
+        <h2>Where We Meet</h2>
+        <div class="wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3266.492820487924!2d-85.310808!3d35.044416000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88605e7cf81a4b4b%3A0xcb15c5ee4d879a78!2sChattanooga+Public+Library!5e0!3m2!1sen!2sus!4v1409955150188" width="389" height="261" frameborder="0" id="map"></iframe>
+
+            <div class="float_left float_text">
+                <div id="where_chatt">
+                    <h3>Chattanooga, TN</h3>
+
+                    <p>We love Chattanooga -- our Gigabit fiber brings a lot of possibility to the work we do on the web.</p>
+                </div><!-- #where_chatt -->
+
+                <div id="where_4th">
+                    <h3>4th Floor of the Downtown Library</h3>
+
+                    <p>Find us on the 4th Floor of the downtown library, a space known for its collaboration and cutting edge technology. Don’t give up, you can make it up all the stairs!</p>
+                </div><!-- #where_4th -->
+
+                <p id="meetup"><a href="http://www.meetup.com/CodeXX/"><img src="images/codexx-meetupLogo.png"></a></p>
+            </div><!-- .float_left -->
+
+            <div class="clear"></div>
+        </div><!-- #where -->
+
+        <br class="clear">
+    </div><!-- .bg_teal -->
+
+    <div class="bg_white" id="members">
+        <div id="wrapper">
+            <h2>CodeXX Members</h2>
+            <p id="members_desc">We work in any framework, and come from all professional backgrounds and experience levels.</p>
+
+            <ul class="row_members">
+                <li>
+                    <img src="images/mem-maryhelen.jpg">
+                    <p><span class="uppercase">Mary Helen</span><br><span class="smaller">Journalist</span></p>
+                </li>
+                <li>
+                    <img src="images/mem-seun.jpg">
+                    <p><span class="uppercase">Seun</span><br><span class="smaller">Web Designer</span></p>
+                </li>
+                <li>
+                    <img src="images/mem-erin.jpg">
+                    <p><span class="uppercase">Erin</span><br><span class="smaller">Digital Marketing</span></p>
+                </li>
+                <li>
+                    <img src="images/mem-jill.jpg">
+                    <p><span class="uppercase">Jill</span><br><span class="smaller">Computer Science <br>Teacher</span></p>
+                </li>
+            </ul>
+            <div class="clear"></div>
+
+            <ul class="row_members">
+				<li>
+                    <img src="images/mem-regina.jpg">
+                    <p><span class="uppercase">Regina</span><br><span class="smaller">Web Design <br>Enthusiast</span></p>
+                </li>
+                <li>
+                    <img src="images/mem-elizabeth.jpg">
+                    <p><span class="uppercase">Elizabeth</span><br><span class="smaller">Graphic Designer</span></p>
+                </li>
+               <!--  <li>
+                    <img src="images/avatar.jpg">
+                    <p><span class="uppercase">Laura S.</span><br><span class="smaller">Web/Graphic Designer</span></p>
+                </li>
+                <li>
+                    <img src="images/avatar.jpg">
+                    <p><span class="uppercase">Lexie</span><br><span class="smaller">Computer Science Student</span></p>
+                </li> -->
+            </ul>
+       </div><!-- #members -->
+    </div><!-- #bg_white -->
+
+    <div class="bg_teal">
+        <div id="events">
+            <h2>Events</h2>
+
+            <img src="images/logo-python.png">
+            <div class="events-details">
+                <h4>Build a web app in Python</h4><br>
+                <span class="underline white">Sept. 18 - Nov 6</span>
+
+                <p>CodeXX and WayPaver are running an introduction to Python workshop for women! Learn about objects, variables, functions, and loops while building your own functional web app.</p>
+
+                <p>Also, free childcare is provided.</p>
+                
+                <p>The classes will meet in the Lamp Post Group Community Room on Thursdays, from 6:00-7:30 PM starting on September 18, 2014 and running until Nov. 6.</p>
+
+                <p>The cost is <span class="bold white">$75</span>, but you will be 100% refunded if you complete the entire course.</p>
+
+                <p><a href="https://www.eventbrite.com/e/build-a-website-codexx-womens-workshop-8-weeks-tickets-12961122065" class="white">Come learn to make your own web app!</a></p>
+            </div><!-- .events-details -->
+            <div class="clear"></div>
+
+            <img src="images/logo-htmlcssjs.png">
+            <div class="events-details">
+                <h4>Build a website!</h4><br>
+                <span class="underline white">Sept. 17 - Nov 5</span>
+
+                <p>CodeXX and WayPaver are running a website building workshop for women! Learn the basics of HTML, CSS, and Javascript while building your own online portfolio from scratch.</p>
+
+                <p>Also, free childcare is provided.</p>
+                
+                <p>The classes will meet in the Lamp Post Group Community Room on Wednesdays, from 6:00-7:30 PM starting on September 17, 2014 and running until Nov. 5.</p>
+
+                <p>The cost is <span class="bold white">$75</span>, but you will be 100% refunded if you complete the entire course.</p>
+
+                <p><a href="https://www.eventbrite.com/e/build-a-web-app-in-python-codexx-womens-workshop-8-weeks-tickets-12972630487" class="white">Come learn to make websites!</a></p>
+            </div><!-- .events-details -->
+
+            <div class="clear"></div>
+        </div><!-- #calendar -->
+    </div><!-- #bg_teal -->
+
+    <div id="resources" class="bg_white" name="resources">
+        <div id="wrapper">
+            <h2>Resources</h2>
+            <ul>
+                <li id="waypaver"><a href="http://waypaver.co/" target="_blank"><img src="images/logo-waypaver.png" alt="Waypaver"></a></li>
+                <li id="codecademy"><a href="http://codecademy.com" target="_blank"><img src="images/logo-codecademy.png" alt="Codecademy"></a></li>
+                <li id="treehouse"><a href="http://teamtreehouse.com/" target="_blank"><img src="images/logo-treehouse.png"></a></li>
+            </ul>
+        </div><!-- -->
+    </div><!-- #resources -->
+
+    <div id="contact" class="bg_teal">
+        <div class="wrapper">
+            <h2>Contact Us</h2>
+
+            <form method="post" action="php/contactengine.php">
+                <div class="form-col2">
+                    <label for="Name">Name:</label><br>
+                    <input type="text" name="Name" id="Name" />
+                </div>
+
+                <div class="form-col2">
+                    <label for="Email">Email:</label><br>
+                    <input type="text" name="Email" id="Email" />
+                </div>
+
+                <div>
+                    <label for="Message">Message:</label><br />
+                    <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+                    <input type="submit" name="submit" value="Submit" class="submit-button" />
+                </div>
+            </form>
+        </div>
+    </div><!-- #contact -->
+
+</body>
+
+</html>

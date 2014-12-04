@@ -1,0 +1,58 @@
+html {
+	background: url('../images/bg.png');
+	font-family: 'Ubuntu', sans-serif;
+}
+h1 {
+	padding: 1% 9%;
+}
+#assets {
+	padding: 0 9% 9%;
+	text-align: center;
+}
+.objects {
+	text-decoration: none;
+	display: inline-block;
+	width: 256px;
+	padding: 25px;
+	text-align: center;
+}
+#assets .objects img {
+	border-radius: 50%;
+	width: 132px;
+}
+.objects a {
+	color: darkcyan;
+	margin-top: 10px;
+	display: block;
+}
+.objects h3 {
+	text-transform: uppercase;
+	margin-top: 20px;
+	font-size: 16px;
+}
+#links,
+#other {
+	padding: 0 9%;
+}
+
+h2 {
+	font-size: 20px;
+	margin-bottom: 20px;
+	text-decoration: underline;
+}
+#links a,
+#other a {
+	text-decoration: none;
+	color: darkcyan;
+}
+#links a:hover
+#other a:hover {
+	text-decoration: underline;
+	color: darkslategray;
+}
+hr {
+	margin-bottom: 3%;
+}
+ul {
+	margin-bottom: 30px;
+}
